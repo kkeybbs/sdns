@@ -14,7 +14,7 @@ go get -u github.com/kkeybbs/sdns
 If you want to build for linux on windows.
 ```
 set GOOS=linux
-set GOARCH=amd6
+set GOARCH=amd64
 set GOPATH=%cd%\gopath
 go get -v github.com/kkeybbs/sdns
 go build -ldflags="-s -w" github.com/kkeybbs/sdns
