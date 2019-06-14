@@ -1,0 +1,16 @@
+addr: :53
+servers:
+- 8.8.8.8
+- 8.8.4.4
+rule:
+  exact:
+    github.com: self
+    facebook.com: 127.0.0.1
+  suffix:
+    .google.com: self
+    .facebook.com: self
+    .googlesource.com: self
+  pattern:
+    (.*)\.?docker\.io: self
+    (.*)\.?(docker|google|github|amazonaws)\.com: self
+    gopkg\.in: self
